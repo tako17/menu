@@ -1,0 +1,169 @@
+@font-face {
+  font-family: mtavruli;
+  src: url("../fonts/bpg_extrasquare_mtavruli_2009.ttf");
+}
+body {
+  font-family: mtavruli;
+}
+:root {
+  --background-color: #f6f3e0;
+  --red: #a80532;
+  --gray: #3e515a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 21px 60px;
+  box-shadow: 0px 3px 6px #0000001a;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul a:hover {
+  color: var(--red);
+}
+svg:hover {
+  color: var(--red);
+}
+nav a {
+  font-size: 20px;
+  color: var(--gray);
+  text-align: center;
+  display: inline-block;
+}
+.fa-house,
+nav a::before {
+  width: 19px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 15px;
+}
+nav li {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+nav li:first-child {
+  margin-left: 0;
+}
+.active {
+  color: var(--red);
+}
+
+.main::before {
+  content: url("../img/metro-home.svg");
+}
+
+.main:hover::before {
+  content: url("../img/metro-home-red.svg");
+}
+.about::before {
+  content: url("../img/anout.svg");
+}
+.about:hover::before {
+  content: url("../img/about-res.svg");
+}
+.alumn::before {
+  content: url("../img/awesome-graduation-cap.svg");
+}
+.alumn:hover::before {
+  content: url("../img/awesome-graduation-cap-red.svg");
+}
+.nos::before {
+  content: url("../img/awesome-users.svg");
+}
+.nos:hover::before {
+  content: url("../img/awesome-users-red.svg");
+}
+.organizers::before {
+  content: url("../img/awesome-users.svg");
+}
+.organizers:hover::before {
+  content: url("../img/awesome-users-red.svg");
+}
+.gallery::before {
+  content: url("../img/ionic-ios-images.svg");
+}
+.gallery:hover:before {
+  content: url("../img/ionic-ios-images-red.svg");
+}
+.resources::before {
+  content: url("../img/ionic-ios-settings.svg");
+}
+.resources:hover:before {
+  content: url("../img/ionic-ios-settings-red.svg");
+}
+
+.languages li {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--red);
+  padding: 0%;
+  margin-left: 14px;
+}
+
+.languages li:last-child {
+  background-color: #ffffff;
+  padding: 0%;
+  margin-left: 14px;
+  border: 1px solid #dcc26a;
+}
+
+.languages a {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #dcc26a;
+}
+.languages li:hover a {
+  background-color: var(--red);
+  color: #dcc26a;
+}
+
+.humburger-menu {
+  display: none;
+  content: url("../img/bars-solid.svg");
+  order: 2;
+}
+
+.humburger-menu:hover {
+  cursor: pointer;
+}
+
+.mobile-nav li {
+  padding: 20px 60px;
+  border-bottom: 1px solid #dcc26a;
+}
+
+
+.mobile-nav {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+}
+.mobile-nav li {
+    display: none;
+}
+.mobile-nav li a {
+  font-size: 20px;
+  color: var(--gray);
+  display: block;
+}
+.mobile-nav li:hover {
+    box-shadow: 0px 3px 6px #0000001a;
+    border: 0px;
+  }
+.hidden{
+    display: none;
+}
